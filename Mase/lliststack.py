@@ -23,7 +23,7 @@ class Stack :
     def pop( self ):
         assert not self.isEmpty(), "Cannot pop from an empty stack"
         node = self._top
-        self.top = self._top.next
+        self._top = self._top.next
         self._size -= 1
         return node.item
 
